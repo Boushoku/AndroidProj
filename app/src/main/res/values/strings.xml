@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidToolBox</string>
+    <string name="valider">VALIDER</string>
+    <string name="connexion">CONNEXION</string>
 </resources>
