@@ -2,4 +2,6 @@
     <string name="app_name">AndroidToolBox</string>
     <string name="valider">VALIDER</string>
     <string name="connexion">CONNEXION</string>
+    <string name="bonjour">Bonjour</string>
+    <string name="image_isen">image isen</string>
 </resources>
