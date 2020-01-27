@@ -4,7 +4,6 @@
     <string name="connexion">CONNEXION</string>
     <string name="bonjour">Bonjour</string>
     <string name="image_isen">image isen</string>
-    <string name="cycle_de_vie">Cycle de vie</string>
     <string name="mon_fragment">Mon fragment</string>
     <string name="go_to_fragment_test">Go to fragment test</string>
     <string name="fragment_1">Fragment 1</string>
@@ -12,4 +11,9 @@
     <string name="second_fragment">Second fragment</string>
     <string name="first_fragment">First fragment</string>
     <string name="go_to_second">Go to second</string>
+    <string name="d_connexion">Déconnexion</string>
+    <string name="webservices">Webservices</string>
+    <string name="permission">Permission</string>
+    <string name="sauvegarde">Sauvegarde</string>
+    <string name="cycle_de_vie">Cycle de vie</string>
 </resources>
