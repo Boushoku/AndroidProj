@@ -5,4 +5,11 @@
     <string name="bonjour">Bonjour</string>
     <string name="image_isen">image isen</string>
     <string name="cycle_de_vie">Cycle de vie</string>
+    <string name="mon_fragment">Mon fragment</string>
+    <string name="go_to_fragment_test">Go to fragment test</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="frgament_2">Frgament 2</string>
+    <string name="second_fragment">Second fragment</string>
+    <string name="first_fragment">First fragment</string>
+    <string name="go_to_second">Go to second</string>
 </resources>
