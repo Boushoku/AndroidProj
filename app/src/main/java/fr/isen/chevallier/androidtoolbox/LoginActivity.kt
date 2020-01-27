@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 
 class LoginActivity : AppCompatActivity() {
@@ -19,12 +18,19 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val sharedPreferences: SharedPreferences = this.getSharedPreferences(sharedPreferencesFile,
             Context.MODE_PRIVATE)
+        val sharedIdValue = sharedPreferences.getString("id_key","")
+        val sharedPwValue = sharedPreferences.getString("name_key","")
         val goodId = "admin"
         val goodPw = "123"
         val buttonValidate = findViewById<Button>(R.id.validateButton)
         val identifiant = findViewById<EditText>(R.id.identifiant)
         val password = findViewById<EditText>(R.id.password)
         val intentHomePage = Intent(this, HomeActivity::class.java)
+        Toast.makeText(this, "id sauvegardé " + sharedIdValue, Toast.LENGTH_LONG).show()
+        if (sharedIdValue?.length != 0){
+            identifiant.setText(sharedIdValue)
+            password.setText(sharedPwValue)
+        }
         buttonValidate.setOnClickListener{
             if (identifiant.text.toString() == goodId && password.text.toString() == goodPw){
 
@@ -35,9 +41,8 @@ class LoginActivity : AppCompatActivity() {
                 editor.apply()
                 editor.commit()
 
-                val sharedIdValue = sharedPreferences.getString("id_key","defaultid")
-                val sharedNameValue = sharedPreferences.getString("name_key","defaultname")
-                Toast.makeText(this, "Saved:Email" + sharedIdValue.toString() +"\nSaved:Password" + sharedNameValue.toString(), Toast.LENGTH_LONG).show()
+
+                Toast.makeText(this, "Saved:Email" + sharedIdValue.toString() +"\nSaved:Password" + sharedPwValue.toString(), Toast.LENGTH_LONG).show()
 
 
 
