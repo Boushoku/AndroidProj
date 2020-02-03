@@ -16,6 +16,8 @@ class HomeActivity : AppCompatActivity(){
         setContentView(R.layout.activity_home)
         val gotosaveButton = findViewById<ImageButton>(R.id.gotosaveButton)
         gotosaveButton.setOnClickListener { startActivity(Intent(this, SaveActivity::class.java)) }
+        val permissionButton = findViewById<ImageButton>(R.id.permissionButton)
+        permissionButton.setOnClickListener { startActivity(Intent(this, PermissionActivity::class.java)) }
         val sharedPreferences: SharedPreferences = this.getSharedPreferences(sharedPreferencesFile,
             Context.MODE_PRIVATE)
         val buttonLifeCycle = findViewById<ImageButton>(R.id.buttonLifeCycle)
