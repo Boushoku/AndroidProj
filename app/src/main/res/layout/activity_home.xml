@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -71,7 +73,7 @@
         app:srcCompat="@android:drawable/stat_sys_speakerphone" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/gotosaveButton"
         android:background="@color/colorRed"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -125,9 +127,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sauvegarde"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/gotosaveButton"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/gotosaveButton" />
 
     <TextView
         android:id="@+id/textView5"

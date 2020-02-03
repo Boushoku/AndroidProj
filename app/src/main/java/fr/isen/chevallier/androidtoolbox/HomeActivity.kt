@@ -12,10 +12,12 @@ class HomeActivity : AppCompatActivity(){
     private val sharedPreferencesFile = "kotlinsharedpreference"
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val sharedPreferences: SharedPreferences = this.getSharedPreferences(sharedPreferencesFile,
-            Context.MODE_PRIVATE)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        val gotosaveButton = findViewById<ImageButton>(R.id.gotosaveButton)
+        gotosaveButton.setOnClickListener { startActivity(Intent(this, SaveActivity::class.java)) }
+        val sharedPreferences: SharedPreferences = this.getSharedPreferences(sharedPreferencesFile,
+            Context.MODE_PRIVATE)
         val buttonLifeCycle = findViewById<ImageButton>(R.id.buttonLifeCycle)
         val intentLifeCycle = Intent(this, LifeCycleActivity::class.java)
         buttonLifeCycle.setOnClickListener{

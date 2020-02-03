@@ -16,4 +16,14 @@
     <string name="permission">Permission</string>
     <string name="sauvegarde">Sauvegarde</string>
     <string name="cycle_de_vie">Cycle de vie</string>
+    <string name="home_save">home_save</string>
+    <string name="read">Read</string>
+    <string name="textview">TextView</string>
+    <string name="fields_empty">Toto</string>
+    <string name="button">Button</string>
+    <string name="date">Date</string>
+    <string name="name">name</string>
+    <string name="firstname">firstname</string>
+    <string name="save">save</string>
+    <string name="birthdate">birthDate</string>
 </resources>
