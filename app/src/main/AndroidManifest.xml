@@ -25,6 +25,7 @@
         <activity android:name=".LifeCycleActivity"></activity>
         <activity android:name=".SaveActivity"></activity>
         <activity android:name=".PermissionActivity"></activity>
+        <activity android:name=".WebServiceActivity"></activity>
     </application>
 
 
